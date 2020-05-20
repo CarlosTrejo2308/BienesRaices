@@ -1,7 +1,3 @@
-<?php
-  include_once '../models/dbh.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,18 +7,19 @@
   <body>
     <h1>Prueba</h1>
 
-    <?php
-      $sql = "select * from usuarios;";
-      $result = mysqli_query($conn, $sql);
+    <form class="" action="../controller/signup.php" method="post">
 
-      $resultCheck = mysqli_num_rows($result);
+      <input type="text" name="first" placeholder="firstname">
+      <br>
+      <input type="text" name="last" placeholder="lastname">
+      <br>
+      <input type="text" name="email" placeholder="e_mail">
+      <br>
+      <input type="password" name="pwd" placeholder="passwd">
+      <br>
+      <button type="submit" name="submit">Sign up</button>
 
-      if ( $resultCheck > 0 ) {
-        while ( $row = mysqli_fetch_assoc( $result ) ) {
-          echo $row['name'];
-        }
-      }
-    ?>
+    </form>
 
   </body>
 </html>
