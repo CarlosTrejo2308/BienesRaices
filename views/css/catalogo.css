@@ -1,0 +1,142 @@
+.slider{
+	width: 100%;
+}
+.wrapper{width: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0;}
+.topbar{
+	width: 100%;
+	padding-top: 50px; 
+}
+.Logo {width: 80%;
+	padding-left: 2%;
+	background-color: rgb(16,71,107);}
+
+.Telefonos {width: 20%;
+	align-content: center;
+background-color: rgb(16,71,107);}
+
+.menu_bar {width: 100%;
+background-color: rgb(16,71,107);}
+
+.space{
+	width: 100%;
+	background-color: rgb(16,71,107);
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+}
+
+.Data{
+	width: 75%;
+	background-color: white;
+}
+
+.Busqueda{
+	background-color: rgb(61,100,146);
+	padding-right: 1%;
+	padding-left: 3%;
+	width: 25%;
+	padding-top: 50px;
+}
+.De{
+	padding-left: 15px;
+	float: left;
+	align-content: center;
+	width: 45%;
+}
+
+.A{
+	float: right;
+	width: 45%;
+}
+.lupa{
+	width: 20%;
+}
+.encuentra_tu_casa{
+	width: 80%;
+}
+.Busqueda select,input{
+	width: 90%;
+	color: rgb(84,146,177);
+	background-color: rgb(16,71,107);
+	border-color: rgb(16,71,107);
+}
+.Busqueda label{
+	color: white;
+}
+.button{
+	padding-top: 15px;
+	padding-left: 35%;
+	width: 100%;
+	align-content: center;
+	height: auto;
+}
+.button button{
+	background-color: rgb(50,174,216);
+	border-color: rgb(50,174,216);
+	color: white;
+}
+.imagen{
+	width: 30%;
+}
+.imagen img{
+	width: 100%;
+}
+.texto{
+	padding-left: 15px;
+	width: 60%;
+}
+.Logo img{
+	width: 400px;
+}
+
+.downmenu_bar p{
+	color: gray;
+	padding-top: 2px;
+}
+.downmenu_bar img{
+	width: 30px;
+}
+
+.Telefonos img{
+	width: 190px;
+	padding-top: 10px;
+	float: right;
+	padding-right: 10px;
+}
+
+.downmenu_bar {width: 75%;
+background-color: rgb(16,71,107);
+padding-left: 40px;
+padding-top: 10px;}
+
+.downmenu_bar p{
+	color: rgb(186,186,182);
+	padding-top: 2px;
+	padding-right: 160px;
+	float: right;
+}
+.downmenu_bar img{
+	width: 30px;
+	float: left;
+}
+
+.downmenu_bar2 {width: 25%;
+	background-color: rgb(16,71,107);
+	text-align: right;
+	color: rgb(186,186,182);
+	padding-right: 10px;
+	padding-top: 10px;
+	align-content: center;
+	font-size: 12px;}
+
+body{
+	background-color: rgb(16,71,107);
+}
+h3{
+	color: rgb(16,71,107);
+}

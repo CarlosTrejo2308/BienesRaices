@@ -1,0 +1,110 @@
+* { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body{
+	background: 
+  url('https://www.publicdomainpictures.net/pictures/60000/velka/at-the-beach-of-atlantic-ocean.jpg') no-repeat center center fixed;
+}
+
+.header h2 {
+  position: relative;
+  color: white;
+}
+p {
+  color: white;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgb(61,100,146);
+    padding: 20px;
+    height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+input[type=text],input[type=date],input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color:white;
+}
+
+::placeholder {
+  color: white;
+}
+
+
+label {
+    padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
+    display: inline-block;/*crear una cuadrícula de cajas que llene el navegador armoniosamente*/
+    float: right;
+    font-weight: bold;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.boton{
+  width: 60%;
+	padding-top: 15px;
+  padding-left: 40%;
+}
+
+.boton_menu{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(50,174,216);
+  }
+
+.mayusculas{
+text-transform: uppercase; 
+}
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    float: left;
+}
+}

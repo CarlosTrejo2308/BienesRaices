@@ -1,0 +1,47 @@
+.photo{width: 100%;
+	margin: auto;
+	background-color: blue;
+	color: white;
+	padding: 0;}
+
+.contenido{
+	width: 75%;
+}
+
+.Acciones{
+	width: 100%;
+}
+
+.A_button_C{
+	width: 25%;
+	padding-left: 20px;
+	padding-top: 4px;
+}
+.Acciones button{
+	width: 90%;
+	background-color: rgb(50,174,216);
+	border-color: rgb(50,174,216);
+	color: white;
+}
+.A_button_P{
+	width: 25%;
+	padding-top: 4px;
+	padding-left: 2%;
+}
+
+.A_status{
+	width: 25%;
+	padding-left: 3%;
+	padding-top: 4px;
+	background-color: white;
+}
+
+.Data{
+	width: 100%;
+	background-color: white;
+	height: 100%;
+}
+
+.Busqueda{
+	padding-top: 40px;
+}
