@@ -9,51 +9,7 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="topbar1">
-			<div class="row">
-				<div class="Logo">
-					<a href="">
-						<img src="../includes/img/logo.png"></img>
-					</a>
-				</div>
-				<div class="Telefonos">
-					<a href="">
-						<img src="../includes/img/bloque call now.png">
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="space">
-					<br>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="menu_bar">
-				<div class="m_button">
-					<button>Inicio</button>
-				</div>
-				<div class="m_button">
-					<button>La Compañia</button>
-				</div>
-				<div class="m_button">
-					<button>Servicios</button>
-				</div>
-				<div class="m_button">
-					<button>Requisitos</button>
-				</div>
-				<div class="m_button">
-					<button>Contactos</button>
-				</div>
-				<div class="menu_bar2">
-					<img src="../includes/img/punto_verde.png"><a href=""> Inicio</a>
-					<img src="../includes/img/punto_verde.png"><a href=""> Buscar</a>
-					<img src="../includes/img/punto_verde.png"><a href=""> Admin</a>
-				</div>
-			</div>
-			<hr>
-		</div>
+		<?php include_once "../includes/top_bar_alt.php"?>
 
 		<div class="row">
 			<div class="container">
@@ -121,9 +77,7 @@
 
 			</div>
 			<div class="side_bar">
-				<div class="menu_bar3">
-					<img src="../includes/img/menu_derecho.png">
-				</div>
+				<?php include_once  "../includes/side_menu.php"?>
 				<hr>
 
 				<div class="Busqueda1">

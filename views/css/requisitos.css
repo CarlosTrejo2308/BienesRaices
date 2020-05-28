@@ -1,0 +1,42 @@
+
+.slider{
+	width: 100%;
+}
+.wrapper{width: 95%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0;}
+
+.title{
+  width: 100%;
+  text-align: center;
+}
+.complementary_tlong{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.options{
+  width: 100%;
+  padding-left: 30%;
+}
+.reg{
+  width: 30%;
+  height: 10%;
+  float: left;
+}
+.reg button{
+  width: 80%;
+}
+.log button{
+  width: 80%;
+}
+.log{
+  width: 30%;
+  height: 10%;
+  float: left;
+}
+
+.container img{
+  width: 100%;
+}

@@ -1,6 +1,5 @@
-.topbar{
+.topbar1{
 	width: 100%;
-	padding-top: 50px;
 }
 .Logo {width: 80%;
 	padding-left: 2%;
@@ -11,11 +10,35 @@
 background-color: rgb(16,71,107);}
 
 .menu_bar {width: 100%;
-background-color: rgb(16,71,107);}
+	background-color: rgb(16,71,107);
+	padding-bottom: 1%;
+	background-image: url("../../includes/img/menu_superior.png");
+	background-size: 550px;
+	background-repeat: no-repeat;
+	height: auto;}
+
+.menu_bar2 {width: 22%;
+	float: right;
+	padding-top: 9px;
+}
+.menu_bar img{
+	width: 12px;
+	height: 12px;
+	margin-bottom: 3px;
+	padding-left: 3px;
+}
+
+.container {width: 75%;
+background-color: white;}
 
 .space{
 	width: 100%;
 	background-color: rgb(16,71,107);
+}
+
+.side_bar{
+	width: 25%;
+	background-color: rgb(61,100,146);
 }
 
 .footer{
@@ -23,12 +46,12 @@ background-color: rgb(16,71,107);}
 	text-align: center;
 }
 
-.Busqueda{
+.Busqueda1{
 	background-color: rgb(61,100,146);
+	width: 100%;
 	padding-right: 1%;
-	padding-left: 3%;
-	width: 25%;
-	padding-top: 2%;
+	padding-left: 10%;
+	padding-top: 10%;
 }
 .De{
 	padding-left: 15px;
@@ -47,15 +70,42 @@ background-color: rgb(16,71,107);}
 .encuentra_tu_casa{
 	width: 80%;
 }
-.Busqueda input[type=text],input[type=email],input[type=date],select{
+.Busqueda1 select,input{
 	width: 90%;
 	color: rgb(84,146,177);
 	background-color: rgb(16,71,107);
 	border-color: rgb(16,71,107);
+	font-family: sans-serif;
+	font-size: 14px;
 }
-.Busqueda label{
+.Busqueda1 label{
 	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
 }
+.menu_bar3{width: 100%;
+	background-image: url("../../includes/img/background_full.png");
+  background-size: cover;
+	padding-left: 5%;
+	height: 185px;
+	padding-top: 4%;
+}
+.menu3{
+  width: 90%;
+  height: 100%;
+	padding-left: 1px;
+	background-image: url("../../includes/img/menu_derecho.png");
+	background-repeat: no-repeat;
+}
+.menu3 button{
+	width: 230px;
+	height: 21px;
+	margin-top: 1px;
+  border: none !important;
+	background-color: transparent;
+  color:transparent;
+}
+
 .buton_busqueda{
 	padding-top: 15px;
 	padding-left: 25%;
@@ -85,7 +135,14 @@ background-color: rgb(16,71,107);}
 	float: right;
 	padding-right: 10px;
 }
-
+.m_button button{
+	width: 110px;
+	float: left;
+	padding-top: 9px;
+	background-color: transparent;
+    border: none !important;
+    color:transparent;
+}
 .downmenu_bar {width: 75%;
 background-color: rgb(16,71,107);
 padding-left: 40px;
@@ -114,6 +171,18 @@ padding-top: 10px;}
 body{
 	background-color: rgb(16,71,107);
 }
-h3{
+h2,h3,h4,h5,h6{
 	color: rgb(16,71,107);
+}
+a {
+	padding-left: 2px;
+	color: white;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-color:black;
+  border-width: 7px;
 }

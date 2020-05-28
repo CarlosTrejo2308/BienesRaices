@@ -10,9 +10,7 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="topbar">
-			<?php include_once "../includes/top_bar.php"?>
-		</div>
+		<?php include_once "../includes/top_bar_alt.php"?>
 
 		<div class="row">
 			<div class="container" style="margin-top: 65px !important;">

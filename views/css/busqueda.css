@@ -4,7 +4,7 @@
 	color: white;
 	padding: 0;}
 
-.contenido{
+.container{
 	width: 75%;
 }
 
@@ -40,8 +40,4 @@
 	width: 100%;
 	background-color: white;
 	height: 100%;
-}
-
-.Busqueda{
-	padding-top: 40px;
 }

@@ -1,0 +1,16 @@
+
+.title{
+  width: 100%;
+}
+.servicio{
+  width: 25%;
+  align-self: center;
+  text-align: center;
+}
+.s_imagen{
+  width: 75%;
+}
+
+.container img{
+  width: 100%;
+}
