@@ -1,6 +1,6 @@
 .topbar{
 	width: 100%;
-	padding-top: 50px; 
+	padding-top: 50px;
 }
 .Logo {width: 80%;
 	padding-left: 2%;
@@ -47,7 +47,7 @@ background-color: rgb(16,71,107);}
 .encuentra_tu_casa{
 	width: 80%;
 }
-.Busqueda select,input{
+.Busqueda input[type=text],input[type=email],input[type=date],select{
 	width: 90%;
 	color: rgb(84,146,177);
 	background-color: rgb(16,71,107);
@@ -56,14 +56,14 @@ background-color: rgb(16,71,107);}
 .Busqueda label{
 	color: white;
 }
-.button{
+.buton_busqueda{
 	padding-top: 15px;
-	padding-left: 35%;
-	width: 100%;
+	padding-left: 25%;
+	width: 75%;
 	align-content: center;
 	height: auto;
 }
-.button button{
+.buton_busqueda input{
 	background-color: rgb(50,174,216);
 	border-color: rgb(50,174,216);
 	color: white;
