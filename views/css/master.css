@@ -33,13 +33,14 @@ background-color: white;}
 
 .side_bar{
 	width: 25%;
+	background-color: rgb(61,100,146);
 }
 .Busqueda1{
 	width: 100%;
-	background-color: rgb(61,100,146);
+	
 	padding-right: 1%;
 	padding-left: 10%;
-	padding-top: 
+	padding-top: 10%;
 }
 .Busqueda1 select,input{
 	width: 90%;
