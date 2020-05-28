@@ -81,6 +81,11 @@
 				<div class="Busqueda1">
 					<?php include_once  "../includes/Busqueda.php"?>
 				</div>
+
+				<div class="side_info">
+					<?php include_once "../includes/info.php"?>
+				</div>
+				
 			</div>
 		</div>
 
