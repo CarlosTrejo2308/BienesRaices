@@ -13,22 +13,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="topbar">
-			<div class="row">
-					<?php include_once "../includes/menu_bar.php";?>
-			</div>
-			<div class="row">
-				<div class="Logo">
-					<img src="../includes/img/logo.png"></img>
-				</div>
-				<div class="Telefonos">
-					<img src="../includes/img/bloque call now.png">
-				</div>
-			</div>
-			<div class="row">
-				<div class="space">
-					<br>
-				</div>
-			</div>
+			<?php include_once "../includes/top_bar.php"?>
 		</div>
 		<div class="row">
 			<div class="slider">
@@ -88,58 +73,12 @@
 				</div>
 			</div>
 			<div class="Busqueda">
-				<div class="row">
-					<div class="lupa">
-						<img src="../includes/img/img_lupa.png">
-					</div>
-					<div class="encuentra_tu_casa">
-						<img src="../includes/img/encuentra tu  futura propiedad .png">
-					</div>
-				</div>
-				<br>
-				<label>Ciudad y Estado, o C.P.</label>
-				<input type="text" name="CEoCP">
-				<label>Rango De Busqueda</label><br>
-				<select>
-					<option value="0">Sin Rango</option>
-				</select>
-				<label>Rango de Precio De : - A:</label>
-				<div class="row">
-					<div class="De">
-						<select>
-							<option value="0">Todos</option>
-						</select>
-					</div>
-					<div class="A">
-						<select>
-							<option value="0">Todos</option>
-						</select>
-					</div>
-				</div>
-				<label>Recámara(s)</label><br>
-				<select>
-					<option value="0">No importa.</option>
-				</select>
-				<br><label>Baño(s)</label><br>
-				<select>
-					<option value="0">No importa.</option>
-				</select>
-				<div class="row">
-					<div class="button">
-						<button>Buscar</button>
-					</div>
-				</div>
+				<?php include_once  "../includes/Busqueda.php"?>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="downmenu_bar">
-				<img src="../includes/img/logotipo.png">
-				<p>Inicio : Compra : Construir : Venta : Mudanzas : Seguros : Contactos</p>
-			</div>
-			<div class="downmenu_bar2">
-				<p>Bienes Raíces Multicasa @ 2012<br>Pólíticas de Privacidad</p>
-			</div>
+			<?php include_once "../includes/down_bar.php"?>
 		</div>
 
 	</div>

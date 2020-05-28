@@ -11,24 +11,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="topbar">
-			<div class="row">
-					<?php include_once "../includes/menu_bar.php";?>
-			</div>
-
-			<div class="row">
-				<div class="Logo">
-					<img src="../includes/img/logo.png"></img>
-				</div>
-				<div class="Telefonos">
-					<img src="../includes/img/bloque call now.png">
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="space">
-					<br>
-				</div>
-			</div>
+			<?php include_once "../includes/top_bar.php"?>
 		</div>
 
 		<div class="row">
@@ -42,10 +25,10 @@
 				<div class="bg">
 					<form action="" method="post" onsubmit="">
 						<div class="row">
-							<div class="col-25">	
+							<div class="col-25">
 								<label for="lnombre">Nombre:</label>
 							</div>
-							<div class="col-75">		
+							<div class="col-75">
 								<input type="text" id="inombre" name="inombre" maxlength="30" placeholder="Ingrese su nombre" class="mayusculas">
 							</div>
 						</div>
@@ -54,7 +37,7 @@
 							<div class="col-25">
 								<label for="lpaterno">Primer Apellido:</label>
 							</div>
-							<div class="col-75">	
+							<div class="col-75">
 								<input type="text" id="ipaterno" name="ipaterno" maxlength="30" placeholder="Ingrese su apellido paterno" class="mayusculas">
 							</div>
 						</div>
@@ -83,7 +66,7 @@
 							</div>
 							<div class="col-75">
 								<input type="text" id="ipasswd" name="ipasswd" placeholder="Ingrese su Contraseña">
-							</div>	
+							</div>
 						</div>
 
 						<div class="row">
@@ -100,13 +83,7 @@
 		<br>
 
 		<div class="row">
-			<div class="downmenu_bar">
-				<img src="../includes/img/logotipo.png">
-				<p>Inicio : Compra : Construir : Venta : Mudanzas : Seguros : Contactos</p>
-			</div>
-			<div class="downmenu_bar2">
-				<p>Bienes Raíces Multicasa @ 2012<br>Pólíticas de Privacidad</p>
-			</div>
+			<?php include_once "../includes/down_bar.php"?>
 		</div>
 
 	</div>
