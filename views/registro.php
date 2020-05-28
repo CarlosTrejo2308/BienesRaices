@@ -40,12 +40,12 @@
 				<p>Complete los datos para registrarse como cliente.</p>
 
 				<div class="bg">
-					<form action="" method="post" onsubmit="">
+					<form action="../controller/newuser.php" method="post" onsubmit="">
 						<div class="row">
-							<div class="col-25">	
+							<div class="col-25">
 								<label for="lnombre">Nombre:</label>
 							</div>
-							<div class="col-75">		
+							<div class="col-75">
 								<input type="text" id="inombre" name="inombre" maxlength="30" placeholder="Ingrese su nombre" class="mayusculas">
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 							<div class="col-25">
 								<label for="lpaterno">Primer Apellido:</label>
 							</div>
-							<div class="col-75">	
+							<div class="col-75">
 								<input type="text" id="ipaterno" name="ipaterno" maxlength="30" placeholder="Ingrese su apellido paterno" class="mayusculas">
 							</div>
 						</div>
@@ -83,7 +83,7 @@
 							</div>
 							<div class="col-75">
 								<input type="text" id="ipasswd" name="ipasswd" placeholder="Ingrese su Contraseña">
-							</div>	
+							</div>
 						</div>
 
 						<div class="row">
