@@ -31,10 +31,10 @@ $('#login_form').submit(function(event){
         $('#login_modal').modal('hide');
           Swal.fire({
             title: "Login",
-            text: "Bienvenido",
+            text: "Bienvenido Admin",
             type: "success"
             }).then(function() {
-              window.location = "master.php";
+              window.location = "master_admin.php";
               });
             },
       error : function(data) {

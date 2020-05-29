@@ -14,6 +14,7 @@ $respu = mysqli_query($conn, $sql);
 
 if ( $respu == 1 )  {
   header("Location: ../views/registro.php?signup=success");
+  
 }
 else {
   header("Location: ../views/registro.php?signup=fail");

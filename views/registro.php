@@ -21,13 +21,13 @@
 				<p>Complete los datos para registrarse como cliente.</p>
 
 				<div class="bg">
-					<form action="../controller/newuser.php" method="post">
+					<form method="post" id="registr_form" name="registr_form">
 						<div class="row">
 							<div class="col-25">
 								<label for="lnombre">Nombre:</label>
 							</div>
 							<div class="col-75">
-								<input type="text" id="inombre" name="inombre" maxlength="30" placeholder="Ingrese su nombre" class="mayusculas">
+								<input type="text" id="inombre" name="inombre" maxlength="30" placeholder="Ingrese su nombre" class="mayusculas" required="required">
 							</div>
 						</div>
 
@@ -36,7 +36,7 @@
 								<label for="lpaterno">Primer Apellido:</label>
 							</div>
 							<div class="col-75">
-								<input type="text" id="ipaterno" name="ipaterno" maxlength="30" placeholder="Ingrese su apellido paterno" class="mayusculas">
+								<input type="text" id="ipaterno" name="ipaterno" maxlength="30" placeholder="Ingrese su apellido paterno" class="mayusculas" required="required">
 							</div>
 						</div>
 
@@ -45,7 +45,7 @@
 								<label for="lnacimiento">Fecha de Nacimiento:</label>
 							</div>
 							<div class="col-75">
-								<input type="date" id="inacimiento" name="inacimiento">
+								<input type="date" id="inacimiento" name="inacimiento" required="required">
 							</div>
 						</div>
 
@@ -54,7 +54,7 @@
 								<label for="lemail">Correo:</label>
 							</div>
 							<div class="col-75">
-								<input type="email" id="iemail" name="iemail" maxlength="100" placeholder="Ingrese su Correo Electrónico">
+								<input type="email" id="iemail" name="iemail" maxlength="100" placeholder="Ingrese su Correo Electrónico" required="required">
 							</div>
 						</div>
 
@@ -63,7 +63,7 @@
 								<label for="lpsswd">Contraseña:</label>
 							</div>
 							<div class="col-75">
-								<input type="text" id="ipasswd" name="ipasswd" placeholder="Ingrese su Contraseña">
+								<input type="text" id="ipasswd" name="ipasswd" placeholder="Ingrese su Contraseña" required="required">
 							</div>
 						</div>
 
@@ -87,4 +87,5 @@
 	</div>
 </body>
 <?php include_once "../includes/js_incluidos.php";?>
+<script src="dependencias/registro.js"></script>
 </html>
