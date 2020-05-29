@@ -2,13 +2,25 @@
 <html>
 <head>
 	<?php include_once "../includes/meta_tags.php";
-	include_once "../includes/includes_css.php";?>
+	include_once "../includes/includes_css.php";
+	session_start();
+	include_once '../models/dbh.php';?>
 	<title>www.Multicasa/agencia_inmoviliaria/busqueda_resultados.com</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/busqueda.css">
 	<link rel="stylesheet" href="css/standar.css">
 </head>
 <body>
+	<?php
+
+
+	$resultados = $_SESSION['resultado'];
+
+	foreach ($resultados as &$valor) {
+		echo $valor;
+	}
+
+	 ?>
 	<div class="container-fluid">
 		<?php include_once "../includes/top_bar_alt.php"?>
 
@@ -19,6 +31,7 @@
 						<img src="../includes/img/house1.jpg">
 						<?php
 							echo("This is a photo");
+
 						?>
 					</div>
 				</div>
@@ -66,7 +79,7 @@
 				<div class="side_info">
 					<?php include_once "../includes/info.php"?>
 				</div>
-				
+
 			</div>
 		</div>
 
