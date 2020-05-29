@@ -98,4 +98,5 @@
 
 	</div>
 </body>
+<?php include_once "../includes/js_incluidos.php";?>
 </html>
