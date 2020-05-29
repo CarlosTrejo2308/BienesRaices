@@ -53,9 +53,9 @@
   <select name = "baths">
     <option value="0">No importa.</option>
     <option value="1">1</option>
-    <option value="2">1 y medio</option>
-    <option value="3">2</option>
-    <option value="4">3</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
   </select>
   <div class="row">
     <div class="buton_busqueda">

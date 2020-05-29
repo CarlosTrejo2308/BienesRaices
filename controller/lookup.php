@@ -96,13 +96,13 @@ if ( $banos != 0 ) {
     $sql .= " casas.bathrooms >= 1";
   }
   else if ( $banos == 2 ) {
-    $sql .= " casas.bathrooms >= 1";
-  }
-  else if ( $banos == 3 ) {
     $sql .= " casas.bathrooms >= 2";
   }
-  else if ( $banos == 4 ) {
+  else if ( $banos == 3 ) {
     $sql .= " casas.bathrooms >= 3";
+  }
+  else if ( $banos == 4 ) {
+    $sql .= " casas.bathrooms >= 4";
   }
 
   $sql .= "\n AND ";
