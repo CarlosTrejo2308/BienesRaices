@@ -19,7 +19,7 @@
     <legend class="text-center header"><h2>Data Table para la Base de Datos de Casas.</h2></legend>
   </div>
 
-  <!-- <table style="width:100%">
+  <table style="width:100%">
     <tr>
       <th>Vendedor</th>
       <th>Id Casa</th>
@@ -36,9 +36,20 @@
       <th>Saltillo</th>
       <th>Coahuila</th>
       <th>Mexico</th>
-      <th><button type="button" name="button">Ver</button></th>
-      <th><button type="button" name="button">Editar</button></th>
-      <th><button type="button" name="button">Borrar</button></th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="v1" id="v1" value="Ver" /><br/>
+             </form>
+      </th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="m1" id="m1" value="Modificar" /><br/>
+             </form>
+      </th>
+      <th> <form method="post" action="../controller/modificardatos.php" onsubmit="">
+            <input type="submit" name="b1" id="b1" value="Borrar" /><br/>
+           </form>
+      </th>
     </tr>
     <tr>
       <th>David</th>
@@ -46,9 +57,20 @@
       <th>Ramos</th>
       <th>Coahuila</th>
       <th>Mexico</th>
-      <th><button type="button" name="button">Ver</button></th>
-      <th><button type="button" name="button">Editar</button></th>
-      <th><button type="button" name="button">Borrar</button></th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="v2" id="v2" value="Ver" /><br/>
+             </form>
+      </th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="m2" id="m2" value="Modificar" /><br/>
+             </form>
+      </th>
+      <th> <form method="post" action="../controller/modificardatos.php" onsubmit="">
+            <input type="submit" name="b2" id="b2" value="Borrar" /><br/>
+           </form>
+      </th>
     </tr>
     <tr>
       <th>Andres</th>
@@ -56,8 +78,16 @@
       <th>Arteaga</th>
       <th>Coahuila</th>
       <th>Mexico</th>
-      <th><button type="submit" class="button" name="button">Ver</button></th>
-      <th><button type="submit" class="button" name="button">Editar</button></th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="v3" id="v3" value="Ver" /><br/>
+             </form>
+      </th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="m3" id="m3" value="Modificar" /><br/>
+             </form>
+      </th>
       <th> <form method="post" action="../controller/modificardatos.php" onsubmit="">
             <input type="submit" name="b3" id="b3" value="Borrar" /><br/>
            </form>
@@ -65,7 +95,8 @@
     </tr>
   </table>
 
-  <?php
+
+  <!-- <?php
 
   function testfun()
   {
@@ -78,7 +109,7 @@
 
   ?> -->
 
-   <?php
+   <!-- <?php
     include("../models/class_casas_dal.php");
     $obj_casas=new casas_dal;
 
@@ -148,7 +179,7 @@
   <div class="row">
       <hr>
       <?php include_once "../includes/down_bar.php"?>
-  </div>
+  </div> -->
 
 </div><!-- end container -->
 </body>
