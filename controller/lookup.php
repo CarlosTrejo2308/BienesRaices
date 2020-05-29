@@ -78,13 +78,13 @@ if ( $precioMax != 0 ) {
 // Recamaras
 if ( $recamaras != 0 ) {
   if ( $recamaras == 1 ) {
-    $sql .= " casas.rooms >= 1";
+    $sql .= " casas.rooms >= 3";
   }
   else if ( $recamaras == 2 ) {
-    $sql .= " casas.rooms >= 2";
+    $sql .= " casas.rooms >= 4";
   }
   else if ( $recamaras == 3 ) {
-    $sql .= " casas.rooms >= 3";
+    $sql .= " casas.rooms >= 5";
   }
 
   $sql .= "\n AND ";
