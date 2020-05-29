@@ -37,7 +37,7 @@ function ver($id)
 
 function modificar($id)
 {
-   echo "Se modifico el elemento $id";
+   header("Location: ../views/editthingy.php");
 }
 
 
