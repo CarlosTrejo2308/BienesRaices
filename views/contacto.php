@@ -15,14 +15,14 @@
 		<div class="row">
 			<div class="container_A">
         <div class="frm">
-          <form class='contacto'>
+          <form class='contacto' action="../controller/contactform.php" method="post">
               <div><h6>Contactanos:</h6></div>
               <br>
-              <div><label>Tu Nombre:</label><input type='text' value=''></div>
-              <div><label>Tu Email:</label><input type='text' value=''></div>
-              <div><label>Asunto:</label><input type='text' value=''></div>
-              <div><label>Mensaje:</label><textarea rows='6'></textarea></div>
-              <div><input type='submit' value='Envia Mensaje'></div>
+              <div><label>Tu Nombre:</label><input type='text' name = "name" value=''></div>
+              <div><label>Tu Email:</label><input type='text' name = "mail" value=''></div>
+              <div><label>Asunto:</label><input type='text' name = "subject" value=''></div>
+              <div><label>Mensaje:</label><textarea rows='6' name = "message"></textarea></div>
+              <div><input type='submit' name = "submit" value='Enviar Mensaje'></div>
           </form>
         </div>
       </div>
@@ -34,7 +34,7 @@
 				<div class="Busqueda1">
 					<?php include_once  "../includes/Busqueda.php"?>
 				</div>
-				
+
 				<div class="side_info">
 					<?php include_once "../includes/info.php"?>
 				</div>

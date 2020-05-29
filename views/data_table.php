@@ -36,9 +36,20 @@
       <th>Saltillo</th>
       <th>Coahuila</th>
       <th>Mexico</th>
-      <th><button type="button" name="button">Ver</button></th>
-      <th><button type="button" name="button">Editar</button></th>
-      <th><button type="button" name="button">Borrar</button></th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="v1" id="v1" value="Ver" /><br/>
+             </form>
+      </th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="m1" id="m1" value="Modificar" /><br/>
+             </form>
+      </th>
+      <th> <form method="post" action="../controller/modificardatos.php" onsubmit="">
+            <input type="submit" name="b1" id="b1" value="Borrar" /><br/>
+           </form>
+      </th>
     </tr>
     <tr>
       <th>David</th>
@@ -46,9 +57,20 @@
       <th>Ramos</th>
       <th>Coahuila</th>
       <th>Mexico</th>
-      <th><button type="button" name="button">Ver</button></th>
-      <th><button type="button" name="button">Editar</button></th>
-      <th><button type="button" name="button">Borrar</button></th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="v2" id="v2" value="Ver" /><br/>
+             </form>
+      </th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="m2" id="m2" value="Modificar" /><br/>
+             </form>
+      </th>
+      <th> <form method="post" action="../controller/modificardatos.php" onsubmit="">
+            <input type="submit" name="b2" id="b2" value="Borrar" /><br/>
+           </form>
+      </th>
     </tr>
     <tr>
       <th>Andres</th>
@@ -56,8 +78,16 @@
       <th>Arteaga</th>
       <th>Coahuila</th>
       <th>Mexico</th>
-      <th><button type="submit" class="button" name="button">Ver</button></th>
-      <th><button type="submit" class="button" name="button">Editar</button></th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="v3" id="v3" value="Ver" /><br/>
+             </form>
+      </th>
+      <th>
+        <form method="post" action="../controller/modificardatos.php" onsubmit="">
+              <input type="submit" name="m3" id="m3" value="Modificar" /><br/>
+             </form>
+      </th>
       <th> <form method="post" action="../controller/modificardatos.php" onsubmit="">
             <input type="submit" name="b3" id="b3" value="Borrar" /><br/>
            </form>
@@ -65,18 +95,6 @@
     </tr>
   </table>
 
-  <?php
-
-  function testfun()
-  {
-     echo "Your test function on button click is working";
-  }
-
-  if(array_key_exists('test',$_POST)){
-     testfun();
-  }
-
-  ?>
 
   <!-- <?php
     include("../models/class_casas_dal.php");
