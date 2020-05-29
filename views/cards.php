@@ -42,7 +42,7 @@
       <?php
       $html = '<div class="row">
         <div class="card">
-          <img src="../includes/img/house1.jpg" width="70%">
+          <img src="../includes/img/house2.jpg" width="70%">
         </div>
         <div class="card">
           <!-- <img src="http://placehold.it/200x150"> -->
