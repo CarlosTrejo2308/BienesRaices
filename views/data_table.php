@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <?php include_once "../includes/meta_tags.php"; ?>
+  <?php include_once "../includes/meta_tags.php";
+  session_start();
+  ?>
   <title>www.Multicasa/agencia_inmoviliaria/datatable.com</title>
   <?php include_once "../includes/includes_css.php";?>
   <link rel="stylesheet" href="css/master.css">
@@ -95,7 +97,13 @@
     </tr>
   </table>
 
-
+  <?php
+  if ( isset($_SESSION['mensaje'])) {
+    $message = $_SESSION['mensaje'];
+    //echo $message;
+    echo "<script type='text/javascript'>alert(' $message ');</script>";
+  }
+  ?>
   <!-- <?php
 
   function testfun()

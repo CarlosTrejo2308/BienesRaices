@@ -5,13 +5,16 @@ $dbPassword = "";
 $dbName = "bienesbd";
 
 $conn = mysqli_connect( $dbServername, $dbUsername, $dbPassword, $dbName );
-
+session_start();
 
 function borrar($id)
 {
    $sql = "delete from casas where casasID = $id";
    mysqli_query($conn, $sql);
-   echo "Se borro el elemento $id";
+   //echo "Se borro el elemento $id";
+   session_start();
+   $_SESSION['mensaje'] = "Elemento eliminado: $id";
+   header("Location: ../views/data_table.php");
 }
 
 function ver($id)
@@ -22,14 +25,19 @@ function ver($id)
   $result = mysqli_query($conn, $sql);
 
   $row = mysqli_fetch_assoc( $result );
-  echo "casasID\tsold\tprice\t\t\t____rooms\tbathrooms<br>";
-  echo $row['casasID'] . "_____" . $row['sold'] . "____" . $row['price'] . "____" . $row['rooms'] . "______" . $row['bathrooms'];
 
+  $message = "Casa ID: " . $row['casasID'] . "  Vendido: " . $row['sold'] . " Precio: $" . $row['price'] . " Recamaras: " . $row['rooms'] . " Banos: " . $row['bathrooms'];
+  //echo $message;
+
+  session_start();
+  $_SESSION['mensaje'] = $message;
+  header("Location: ../views/data_table.php");
+  //echo "<script type='text/javascript'>alert('$message');</script>";
 }
 
 function modificar($id)
 {
-   echo "Se modifico el elemento $id";
+   header("Location: ../views/editthingy.php");
 }
 
 
