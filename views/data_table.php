@@ -19,7 +19,7 @@
     <legend class="text-center header"><h2>Data Table para la Base de Datos de Casas.</h2></legend>
   </div>
 
-  <!-- <table style="width:100%">
+  <table style="width:100%">
     <tr>
       <th>Vendedor</th>
       <th>Id Casa</th>
@@ -95,9 +95,8 @@
     </tr>
   </table>
 
-<<<<<<< HEAD
-=======
-  <?php
+
+  <!-- <?php
 
   function testfun()
   {
@@ -109,9 +108,8 @@
   }
 
   ?> -->
->>>>>>> 49445741e168b9a0435c0015c037632ee3dd96a8
 
-   <?php
+   <!-- <?php
     include("../models/class_casas_dal.php");
     $obj_casas=new casas_dal;
 
@@ -181,7 +179,7 @@
   <div class="row">
       <hr>
       <?php include_once "../includes/down_bar.php"?>
-  </div>
+  </div> -->
 
 </div><!-- end container -->
 </body>
