@@ -123,8 +123,9 @@ $array = array();
 if ( $resultCheck > 0 ) {
   while ( $row = mysqli_fetch_assoc( $result ) ) {
     $str = "";
-    $str .= $row['name'] . " " . $row['distancia'] . " " . $row['country'] . " " .$row['state'] . " ";
-    $str .= $row['city'] . " " . $row['price'] . " " . $row['rooms'] . " " . $row['bathrooms'] . " " . "<br>";
+    $str .= $row['picture'] . "|" . $row['name'] . "|" . $row['sold'] . "|" .$row['rooms'] . "|";
+    $str .= $row['bathrooms'] . "|" . $row['price'] . "|" . $row['distancia'] . "|" . $row['google'] . "|" .  $row['city'] . "|";
+    $str .= $row['state'] . "|" . $row["country"];
     array_push($array, $str);
   }
 }

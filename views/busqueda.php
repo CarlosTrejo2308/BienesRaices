@@ -9,31 +9,46 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/busqueda.css">
 	<link rel="stylesheet" href="css/standar.css">
+	<link rel="stylesheet" href="cardscss.css">
 </head>
 <body>
-	<?php
-
-
-	$resultados = $_SESSION['resultado'];
-
-	foreach ($resultados as &$valor) {
-		echo $valor;
-	}
-
-	 ?>
 	<div class="container-fluid">
 		<?php include_once "../includes/top_bar_alt.php"?>
 
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="photo">
-						<img src="../includes/img/house1.jpg">
-						<?php
-							echo("This is a photo");
 
-						?>
-					</div>
+					<?php
+
+					$resultados = $_SESSION['resultado'];
+
+					foreach ($resultados as &$casa) {
+						$arrr = explode("|", $casa);
+						//echo $arrr[7];
+
+						$html = "<div class=\"row\">
+							<div class=\"card\">
+								<img src=\"../includes/img/$arrr[0].jpg\" width=\"70%\">
+							</div>
+							<div class=\"card\">
+								<p class=\"card-text\">Autor: $arrr[1] <br> Vendido: $arrr[2] <br> Cuartos: $arrr[3] <br> Banos: $arrr[4] <br> Precio: $ $arrr[5]</p>
+							</div>
+							 <div class=\"card\">
+								$arrr[6]
+								<p>$arrr[7], $arrr[8], $arrr[9]</p>
+							</div>
+						</div>";
+						$dom = new DomDocument();
+						$dom->loadHTML($html);
+						echo $dom->saveHTML();
+
+						echo "<br>";
+					}
+
+
+					 ?>
+
 				</div>
 
 				<div class="Acciones">
