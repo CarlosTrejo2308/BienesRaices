@@ -1,9 +1,27 @@
-.photo{width: 100%;
-	margin: auto;
-	background-color: blue;
-	color: white;
-	padding: 0;}
-
+.foto{
+	width: 80%;
+	height: 25%;
+	padding-left: 20%;
+	padding-bottom: 2%;
+}
+.foto img{
+	width: 100%;
+}
+.mapa{
+	width: 65%;
+	padding-top: 2%;
+	float: left;
+	margin-right: 2%;
+}
+.mapa iframe{
+	width: 100%;
+}
+.decripcion{
+	width: 30%;
+	text-align: center;
+	align-self: center;
+	float: left;
+}
 .container{
 	width: 75%;
 }
@@ -23,6 +41,12 @@
 	border-color: rgb(50,174,216);
 	color: white;
 }
+.Acciones input{
+	width: 90%;
+	background-color: rgb(50,174,216);
+	border-color: rgb(50,174,216);
+	color: white;
+}
 .A_button_P{
 	width: 25%;
 	padding-top: 4px;
@@ -34,10 +58,4 @@
 	padding-left: 3%;
 	padding-top: 4px;
 	background-color: white;
-}
-
-.Data{
-	width: 100%;
-	background-color: white;
-	height: 100%;
 }
