@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="es">
 	<?php include_once "../includes/meta_tags.php";
 	include_once "../includes/includes_css.php";
 	session_start();
@@ -9,7 +9,6 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/busqueda.css">
 	<link rel="stylesheet" href="css/standar.css">
-	<link rel="stylesheet" href="cardscss.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -17,7 +16,6 @@
 
 		<div class="row">
 			<div class="container">
-				<div class="row">
 
 					<?php
 
@@ -26,19 +24,45 @@
 					foreach ($resultados as &$casa) {
 						$arrr = explode("|", $casa);
 						//echo $arrr[7];
+						if ($arrr[2] == 0){
+							$status = "Disponible";
+						}
+						else{
+							$status = "Vendida";
+						}
 
-						$html = "<div class=\"row\">
-							<div class=\"card\">
-								<img src=\"../includes/img/$arrr[0].jpg\" width=\"70%\">
+						$html = "
+						<div id=\"elemento\">
+							<div class=\"row\">
+									<hr><br>
+									<div class=\"foto\">
+										<img src=\"../includes/img/$arrr[0].jpg\">
+									</div>
+									<hr>
+								</div>
+								<div class=\"row\">
+									<div class=\"decripcion\">
+										<p>Vendedor: $arrr[1] <br> Cuartos: $arrr[3] <br> Banos: $arrr[4] <br> Precio: $ $arrr[5]</p>
+									</div>
+									 <div class=\"mapa\">
+										<p>$arrr[7], $arrr[8], $arrr[9]</p>
+									</div>
 							</div>
-							<div class=\"card\">
-								<p class=\"card-text\">Autor: $arrr[1] <br> Vendido: $arrr[2] <br> Cuartos: $arrr[3] <br> Banos: $arrr[4] <br> Precio: $ $arrr[5]</p>
-							</div>
-							 <div class=\"card\">
-								$arrr[6]
-								<p>$arrr[7], $arrr[8], $arrr[9]</p>
-							</div>
-						</div>";
+						</div>
+
+						<div class=\"Acciones\">
+ 						 <div class=\"row\">
+ 							 <div class=\"A_button_C\">
+ 								 <input class=\"btn btn-success\" type=\"button\" id=\"buy\" value=\"Comprar\">
+ 							 </div>
+ 							 <div class=\"A_button_P\">
+ 								 <input class=\"btn btn-success\" type=\"button\" id=\"pdfr\" value=\"Generar PDF\">
+ 							 </div>
+ 							 <div class=\"A_status\">
+ 								 <label>Status: <i style=\"color:green;\">$status</i></label>
+ 							 </div>
+ 						 </div>
+ 					 </div>";
 						$dom = new DomDocument();
 						$dom->loadHTML($html);
 						echo $dom->saveHTML();
@@ -48,39 +72,6 @@
 
 
 					 ?>
-
-				</div>
-
-				<div class="Acciones">
-					<div class="row">
-						<div class="A_button_C">
-							<button>Comprar</button>
-						</div>
-						<div class="A_button_P">
-							<button>Generar PDF</button>
-						</div>
-						<div class="A_status">
-							<label>Status: <?php echo'<i style="color:green;">Status</i>';?></label>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="space">
-							<br>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="Data">
-						<h3>Casas en Monterrey.</h3>
-						<p>
-							<?php
-								echo"Este es un texto";
-							?>
-						</p>
-					</div>
-				</div>
 			</div>
 
 			<div class="side_bar">
@@ -105,4 +96,5 @@
 	</div>
 </body>
 <?php include_once "../includes/js_incluidos.php";?>
+<script src="dependencias/busqueda.js"></script>
 </html>

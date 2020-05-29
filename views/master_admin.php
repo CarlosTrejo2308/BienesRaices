@@ -39,7 +39,7 @@
 				<div class="row">
 					<div class="texto" align="center">
 						<h4><br><a href="data_table.php">Base de Datos</a></h4>
-						<h4><a href="dashboard.php">Dashboard de Estadísticas de las Ventas</a></h4>
+						<h4><a href="../dashboard/index.html">Dashboard de Estadísticas de las Ventas</a></h4>
 					</div>
 					<div class="colash">
 						<br>

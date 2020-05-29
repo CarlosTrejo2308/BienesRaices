@@ -19,7 +19,7 @@
     <legend class="text-center header"><h2>Data Table para la Base de Datos de Casas.</h2></legend>
   </div>
 
-  <table style="width:100%">
+  <!-- <table style="width:100%">
     <tr>
       <th>Vendedor</th>
       <th>Id Casa</th>
@@ -95,8 +95,23 @@
     </tr>
   </table>
 
+<<<<<<< HEAD
+=======
+  <?php
 
-  <!-- <?php
+  function testfun()
+  {
+     echo "Your test function on button click is working";
+  }
+
+  if(array_key_exists('test',$_POST)){
+     testfun();
+  }
+
+  ?> -->
+>>>>>>> 49445741e168b9a0435c0015c037632ee3dd96a8
+
+   <?php
     include("../models/class_casas_dal.php");
     $obj_casas=new casas_dal;
 
@@ -159,14 +174,14 @@
 
   <?php
     } // cierre del else
-  ?> -->
+  ?>
 
   <?php include_once "../includes/js_incluidos.php"; ?>
-<!--
+
   <div class="row">
       <hr>
       <?php include_once "../includes/down_bar.php"?>
-  </div> -->
+  </div>
 
 </div><!-- end container -->
 </body>
@@ -221,4 +236,4 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>

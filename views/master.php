@@ -27,11 +27,11 @@
 					</div>
 					<div class="texto">
 						<p>
-							Hello. In this tutorial I will show you how to create an elegant WordPress PSD theme.
-							You can use this web template also for consulting agency templates, services websites,
-							marketing website templates, business website templates, finance website templates.
-							The design is very clean and can be modified very easy into a great template.
+							Hola bienvenido a nuestra web, tenemos 15 años de experiencia a su servicio en area Residencial, con certificacion en Comercializacion
+							de inmuebles y en materia de creditos hipotecarios, ofrecemos un servicio personalizado y de calidad para atenderte en todas tus necesidades
+							sobre el mundo inmobiliario. Si necesitas asistencia o tienes preguntas, sientete libre de contactarnos, estaremos dispuestos a ayudarte.
 							<br>
+						</p>
 						</p>
 					</div>
 				</div>
@@ -40,14 +40,37 @@
 					<div class="Middle_content">
 						<p>
 							<br>
-							Hello. In this tutorial I will show you how to crate an elegant WordPress PSD theme. You can use this web
-							template also for consulting agency templates, services websites, marketing website templates, business
-							website templates, finance website templates. The design is very clean and can be modified very easy into
-							a great template..
+							Nosotros somos la cereza en el pastel dentro del sector inmobiliario. los inmobiliarios
+							y los inmuebles de excelencia estan aqui en MULTICASA. Las personas que han buscado un inmueble de calidad superior lo han
+							encontrado aqui. Somos un portal que innova e invierte constantemente para mantener el estandar de calidad que exige nuestro
+							sector, esto nos genera un buen numero de leads aportando un 18% de negocios por medio de este portal.
 							<br>
 							<br>
 
 							<h6>SERVICIOS DESTACADOS</h6>
+							Entre los productos y servicios más destacados, podemos enumerar los 10 siguientes:
+							<br>
+							1) Asesoramiento en la búsqueda de inmuebles
+							<br>
+							2) Tramitación de Certificados Energéticos
+							<br>
+							3) Analizar el mercado
+							<br>
+							4) Negociación
+							<br>
+							5) Home Staging
+							<br>
+							6) Publicidad
+							<br>
+							7) Gestión patrimonial
+							<br>
+							8) Capacitación
+							<br>
+							9) Supervisar el proceso de compra venta
+							<br>
+							10) Agilizar el proceso
+							<br>
+							<br>
 
 							Hello. In this tutorial I will show you how to crate an elegant WordPress PSD theme. You can use this web
 							template also for consulting agency templates, services websites, marketing website templates, business

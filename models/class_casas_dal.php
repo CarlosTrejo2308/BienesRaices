@@ -45,11 +45,18 @@ class casas_dal extends class_db{
         $sql .= "price,";
         $sql .= "rooms,";
         $sql .= "bathrooms,";
+        $sql .= "fk_usuarioID,";
+        $sql .= "fk_ubicacionID";
         $sql .= ") ";
         $sql .= "values(";
-        $sql .= "'".$obj->getId_Curso()."',";
-        $sql .= "'".$obj->getNombre_Curso()."',";
-        $sql .= "'".$fecha."'";
+        $sql .= "'".$obj->getId_Casa()."',";
+        $sql .= "'".$obj->getStatus_Casa()."',";
+        $sql .= "'".$obj->getFoto_Casa()."',";
+        $sql .= "'".$obj->getPrecio_Casa()."',";
+        $sql .= "'".$obj->getCuartos_Casa()."',";
+        $sql .= "'".$obj->getBaños_Casa()."',";
+        $sql .= "'".$obj->getVendedor_Casa()."',";
+        $sql .= "'".$obj->getUbicacion_Casa()."'";
         $sql .= ")";
         //print $sql;exit;
         $this->set_sql($sql);
@@ -68,9 +75,9 @@ class casas_dal extends class_db{
 
 
         //borrar
-    function borrar_curso($obj){
+    function borrar_casa($obj){
         
-        $sql = "delete from catalogo_cursos where id_curso='".$obj->getId_Curso()."'";
+        $sql = "delete from casas where casasID='".$obj->getId_Casa()."'";
      
         //print $sql;exit;
         $this->set_sql($sql);
