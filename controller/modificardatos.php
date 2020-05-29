@@ -11,7 +11,10 @@ function borrar($id)
 {
    $sql = "delete from casas where casasID = $id";
    mysqli_query($conn, $sql);
-   echo "Se borro el elemento $id";
+   //echo "Se borro el elemento $id";
+   session_start();
+   $_SESSION['mensaje'] = "Elemento eliminado: $id";
+   header("Location: ../views/data_table.php");
 }
 
 function ver($id)
