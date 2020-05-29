@@ -13,13 +13,72 @@
     <?php include_once "../includes/top_bar_alt.php"?>
 </div>
 
-<!--<div class="container-fluid">  -->
-<div class="container" style="margin-top: 65px !important;">  
+
+<div class="container" style="margin-top: 65px !important;">
   <div class="form-group">
     <legend class="text-center header"><h2>Data Table para la Base de Datos de Casas.</h2></legend>
   </div>
 
+  <table style="width:100%">
+    <tr>
+      <th>Vendedor</th>
+      <th>Id Casa</th>
+      <th>Ciudad</th>
+      <th>Estado</th>
+      <th>Pais</th>
+      <th>Ver</th>
+      <th>Editar</th>
+      <th>Borrar</th>
+    </tr>
+    <tr>
+      <th>Carlos</th>
+      <th>1</th>
+      <th>Saltillo</th>
+      <th>Coahuila</th>
+      <th>Mexico</th>
+      <th><button type="button" name="button">Ver</button></th>
+      <th><button type="button" name="button">Editar</button></th>
+      <th><button type="button" name="button">Borrar</button></th>
+    </tr>
+    <tr>
+      <th>David</th>
+      <th>2</th>
+      <th>Ramos</th>
+      <th>Coahuila</th>
+      <th>Mexico</th>
+      <th><button type="button" name="button">Ver</button></th>
+      <th><button type="button" name="button">Editar</button></th>
+      <th><button type="button" name="button">Borrar</button></th>
+    </tr>
+    <tr>
+      <th>Andres</th>
+      <th>3</th>
+      <th>Arteaga</th>
+      <th>Coahuila</th>
+      <th>Mexico</th>
+      <th><button type="submit" class="button" name="button">Ver</button></th>
+      <th><button type="submit" class="button" name="button">Editar</button></th>
+      <th> <form method="post" action="../controller/modificardatos.php" onsubmit="">
+            <input type="submit" name="b3" id="b3" value="Borrar" /><br/>
+           </form>
+      </th>
+    </tr>
+  </table>
+
   <?php
+
+  function testfun()
+  {
+     echo "Your test function on button click is working";
+  }
+
+  if(array_key_exists('test',$_POST)){
+     testfun();
+  }
+
+  ?>
+
+  <!-- <?php
     include("../models/class_casas_dal.php");
     $obj_casas=new casas_dal;
 
@@ -33,13 +92,13 @@
   ?>
 
   <div class="form-group col-md-12">
-    <div align="left">  
-      <button type="button" class="btn btn-primary">Volver.</button>  
-    </div> 
+    <div align="left">
+      <button type="button" class="btn btn-primary">Volver.</button>
+    </div>
 
-    <div align="center">  
-      <button type="button" name="add" id="add" data-toggle="modal" data-target="#add_modal" class="btn btn-primary">Publicar Casa.</button>  
-    </div> 
+    <div align="center">
+      <button type="button" name="add" id="add" data-toggle="modal" data-target="#add_modal" class="btn btn-primary">Publicar Casa.</button>
+    </div>
 
     <table id="lista_casas" class="table table-striped table-bordered" border="0">
 
@@ -49,7 +108,7 @@
           <th>Status</th>
           <th>Vendedor</th>
           <th>Actualizar</th>
-          <th>Ver</th> 
+          <th>Ver</th>
           <th>Eliminar</th>
         </tr>
       </thead>
@@ -72,7 +131,7 @@
             <button class='delete btn btn-danger btn-sm' id='del_<?= $value->getId_Casa() ?>' data-id='<?= $value->getId_Casa() ?>' >Eliminar</button>
           </td>
         </tr>
-        
+
         <?php
           }//cierre de foreach
         ?>
@@ -82,24 +141,24 @@
 
   <?php
     } // cierre del else
-  ?>
+  ?> -->
 
   <?php include_once "../includes/js_incluidos.php"; ?>
-
+<!--
   <div class="row">
       <hr>
       <?php include_once "../includes/down_bar.php"?>
-  </div>
+  </div> -->
 
 </div><!-- end container -->
 </body>
-<script src="dependencias/data_table.js"></script>
+<!-- <script src="dependencias/data_table.js"></script> -->
 </html>
-
+<!--
 <div id="dataModal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      
+
       <div class="modal-header">
         <legend class="text-center header">
           <h4 class="modal-title">Información de la Casa.</h4>
@@ -108,16 +167,16 @@
       </div>
 
       <div class="modal-body" id="detail"></div>
-      
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
 
-    </div>  
+    </div>
   </div>
 </div>
 
-<!-- modal para insertar y update -->
+<!-- modal para insertar y update
 <div id="add_modal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -144,4 +203,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
