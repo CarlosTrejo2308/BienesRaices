@@ -96,7 +96,7 @@
 	</div>
 </div>
 </body>
-<script src="../includes/js/jquery-3.4.1.js"></script>
+<?php include_once "../includes/js_incluidos.php";?>
 <script src="dependencias/owl.carousel.min.js"></script>
 <script src="dependencias/sliderb.js"></script>
 </html>

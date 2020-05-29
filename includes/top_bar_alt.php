@@ -38,7 +38,7 @@
     <div class="menu_bar2">
       <img src="../includes/img/punto_verde.png"><a href="master.php"> Inicio</a>
       <img src="../includes/img/punto_verde.png"><a href="busqueda.php"> Buscar</a>
-      <img src="../includes/img/punto_verde.png"><a href=""> Admin</a>
+      <img src="../includes/img/punto_verde.png"><a href="requisitos.php"> Admin</a>
     </div>
   </div>
   <hr>

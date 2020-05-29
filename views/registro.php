@@ -21,7 +21,7 @@
 				<p>Complete los datos para registrarse como cliente.</p>
 
 				<div class="bg">
-					<form action="../controller/newuser.php" method="post" onsubmit="">
+					<form action="../controller/newuser.php" method="post">
 						<div class="row">
 							<div class="col-25">
 								<label for="lnombre">Nombre:</label>
@@ -69,7 +69,7 @@
 
 						<div class="row">
 							<div class="boton">
-								<input type="submit" value="Registrar" class="boton_menu">
+								<input type="submit" value="Registrar" class="btn btn-success" id="registrar" name="registrar">
 							</div>
 						</div>
 
@@ -86,4 +86,5 @@
 
 	</div>
 </body>
+<?php include_once "../includes/js_incluidos.php";?>
 </html>

@@ -66,7 +66,7 @@
               <button type="button" class="btn btn-primary" onclick="location.href='registro.php'">Registrarse</button>
             </div>
             <div class="log">
-              <button type="button" class="btn btn-primary">login</button>
+              <button type="button" name="login" id="login" data-toggle="modal" data-target="#login_modal" class="btn btn-primary">login</button>
             </div>
           </div>
         </div>
@@ -95,8 +95,38 @@
 		</div>
 
 	</div>
+  <!-- modal para el login -->
+  <div id="login_modal" class="modal fade">  
+      <div class="modal-dialog">  
+           <div class="modal-content">  
+                <div class="modal-header">
+                <legend class="text-center header">
+                     <h4 class="modal-title"></h4>
+                     </legend>  
+                     <button type="button" class="close" data-dismiss="modal"></button>
+                       
+                </div>  
+                <div class="modal-body">  
+                     <form method="post" id="login_form">  
+                          <label>Nombre de Usuario:</label>
+                          <input type="text" name="f_nombre" id="f_nombre" class="form-control" />  
+                          <br />
+                          <label>Contraseña:</label>
+                          <input type="text" name="f_contrasena" id="f_contrasena" class="form-control" />  
+                          <br />
+                          <input type="submit" name="loginto" id="loginto" value="Login" class="btn btn-success" />
+                     </form>
+
+                </div>  
+                <div class="modal-footer">  
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>  
+                </div>  
+           </div>  
+      </div>  
+ </div>
 </body>
-<script src="../includes/js/jquery-3.4.1.js"></script>
+<?php include_once "../includes/js_incluidos.php";?>
+<script src="dependencias/modal_login.js"></script>
 <script src="dependencias/owl.carousel.min.js"></script>
 <script src="dependencias/sliderb.js"></script>
 </html>
