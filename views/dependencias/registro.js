@@ -21,7 +21,7 @@ $(document).ready(function(){
 			         Swal.fire({
 			           type: 'error',
 		            title: 'No se ha podido completar el registro.',
-			           });  
+			           });
 		        }
 	    	});
 	});
